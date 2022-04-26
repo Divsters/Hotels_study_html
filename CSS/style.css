@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #E5E5E5;
+}
+
+section {
+  margin-top: 70px;
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 13px 20px;
+  font-size: 16px;
+  line-height: 1;
+  color: #CC9933;
+  background-color: transparent;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+
+.section-heading {
+  text-indent: 40px;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 40px;
+  margin: 0;
+}
+
+
+/* header */
+
+.header {
+  height: 154px;
+  margin-top: 30px;
+}
+
+.header-top-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-lk {
+  margin-left: auto;
+  color: #CC9933;
+}
+
+.header-contacts-link {
+  margin-left: 40px;
+  color: #666666;
+}
+
+.header-bottom-container {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  padding-right: 45px;
+  padding-left: 45px;
+  border-radius: 15px;
+  background-color: white;
+  min-height: 70px ;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.btn-tour {
+  margin-left: auto
+}
+
+.btn-call {
+  margin-left: 40px;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.nav-link {
+  color: #666666;
+}
+
+/* special-offer */
+
+.special-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.special-item {
+  flex: 1 1 50%;
+}
+
+.special-item:nth-child(2n) {
+  order: 1;
+}
+
+/* about */
+
+.about-text {
+  width: 888px;
+  line-height: 32px;
+  margin-top: 11px;
+  margin-bottom: 0;
+}
+
+/* services */
+
+.section-heading-services {
+  margin-bottom: 20px;
+}
+
+.services-list {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.services-item {
+  flex: 0 0 50%;
+}
+
+/* benefits */
+
+.section-benefits-heading {
+  margin-bottom: 30px;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.benefits-item {
+  flex: 0 0 25%;
+}
+
+/* accomodation */
+
+.section-accomodation-heading {
+  margin-bottom: 30px;
+}
+
+.accomodation-list {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.accomodation-item {
+  flex: 0 0 30%
+}
