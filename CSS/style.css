@@ -1,3 +1,39 @@
+@font-face {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Muller"),
+  url(/fonts/MullerRegular.woff2) format(woff2),
+  url(/fonts/MullerRegular.woff) format(woff);
+}
+
+@font-face {
+  font-family: "Muller";
+  font-style:normal;
+  font-weight: 500;
+  src: local("Muller"),
+  url(/fonts/MullerMedium.woff2) format(woff2),
+  url(/fonts/MullerMedium.woff) format(woff);
+}
+
+@font-face {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Muller"),
+  url(/fonts/MullerLight.woff2) format(woff2),
+  url(/fonts/MullerLight.woff) format(woff);
+}
+
+@font-face {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Muller"),
+  url(/fonts/MullerBold.woff2) format(woff2),
+  url(/fonts/MullerBold.woff) format(woff);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -17,7 +53,7 @@ img {
 }
 
 html {
-  font-family: sans-serif;
+  font-family: "Muller";
 }
 
 body {
@@ -53,9 +89,11 @@ section {
 .section-heading {
   text-indent: 40px;
   font-style: normal;
+  font-weight: 400;
   font-size: 40px;
   line-height: 40px;
   margin: 0;
+  margin-bottom: 20px;
 }
 
 
@@ -115,19 +153,22 @@ section {
 
 /* special-offer */
 
-.special-list {
+.special-offers {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.special-item {
   flex: 1 1 50%;
 }
 
-.special-item:nth-child(2n) {
-  order: 1;
+.special-left {
+  display: flex;
+  flex: 1 1 50%;
+  flex-direction: column;
 }
+
+.special-right {
+  flex: 1 1 50%;
+}
+
 
 /* about */
 
