@@ -139,7 +139,7 @@ section {
   margin-right: 7px;
   width: 21px;
   height: 16px;
-  background-image: url(/IMG/keyboard_tab.png);
+  background-image: url(../IMG/keyboard_tab.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -222,20 +222,20 @@ section {
 
 .special-item1 {
   background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%),
-  url(/IMG/Maldiv.png);
+  url(../IMG/Maldiv.png);
   background-repeat: no-repeat;
   background-size: contain, cover;
 }
 
 .special-item2 {
   background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%),
-  url(/IMG/Krit.png);
+  url(../IMG/Krit.png);
   background-repeat: no-repeat;
   background-size: contain, cover;
 }
 
 .special-item3 {
-  background-image: url(/IMG/lux.png);
+  background-image: url(../IMG/lux.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -289,7 +289,7 @@ section {
   display: inline-block;
   height: 16px;
   width: 16px;
-  background-image: url(/IMG/arrow.svg);
+  background-image: url(../IMG/arrow.svg);
   border-color: transparent;
   background-repeat: no-repeat;
   background-size: contain;
@@ -338,19 +338,19 @@ section {
 }
 
 .service-item-img1 {
-  background: url(IMG/living.png) no-repeat, white;
+  background: url(../IMG/living.jpg) no-repeat, white;
 }
 
 .services-item-img2 {
-  background: url(IMG/rent.png) no-repeat, white;
+  background: url(../IMG/rent.png) no-repeat, white;
 }
 
 .services-item-img3 {
-  background: url(IMG/pool.png) no-repeat, white;
+  background: url(../IMG/pool.png) no-repeat, white;
 }
 
 .services-item-img4 {
-  background: url(IMG/cars.png) no-repeat, white;
+  background: url(../IMG/cars.png) no-repeat, white;
 }
 
 .service-item-link {
@@ -363,7 +363,7 @@ section {
   display: inline-block;
   height: 16px;
   width: 16px;
-  background-image: url(/IMG/arrow2.svg);
+  background-image: url(../IMG/arrow2.svg);
   border-color: transparent;
   background-repeat: no-repeat;
   background-size: contain;
