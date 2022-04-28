@@ -338,19 +338,19 @@ section {
 }
 
 .service-item-img1 {
-  background: url(/IMG/living.png) no-repeat, white;
+  background: url(IMG/living.png) no-repeat, white;
 }
 
 .services-item-img2 {
-  background: url(/IMG/rent.png) no-repeat, white;
+  background: url(IMG/rent.png) no-repeat, white;
 }
 
 .services-item-img3 {
-  background: url(/IMG/pool.png) no-repeat, white;
+  background: url(IMG/pool.png) no-repeat, white;
 }
 
 .services-item-img4 {
-  background: url(/IMG/cars.png) no-repeat, white;
+  background: url(IMG/cars.png) no-repeat, white;
 }
 
 .service-item-link {
