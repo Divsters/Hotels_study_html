@@ -222,32 +222,20 @@ section {
 
 .special-item1 {
   background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%),
-<<<<<<< HEAD
   url(../IMG/Maldiv.png);
-=======
-  url(IMG/Maldiv.png);
->>>>>>> 1df0dd1245822302567cf7acb024b24169f3c8dd
   background-repeat: no-repeat;
   background-size: contain, cover;
 }
 
 .special-item2 {
   background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%),
-<<<<<<< HEAD
   url(../IMG/Krit.png);
-=======
-  url(IMG/Krit.png);
->>>>>>> 1df0dd1245822302567cf7acb024b24169f3c8dd
   background-repeat: no-repeat;
   background-size: contain, cover;
 }
 
 .special-item3 {
-<<<<<<< HEAD
   background-image: url(../IMG/lux.png);
-=======
-  background-image: url(IMG/lux.png);
->>>>>>> 1df0dd1245822302567cf7acb024b24169f3c8dd
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -301,11 +289,8 @@ section {
   display: inline-block;
   height: 16px;
   width: 16px;
-<<<<<<< HEAD
   background-image: url(../IMG/arrow.svg);
-=======
   background-image: url(IMG/arrow.svg);
->>>>>>> 1df0dd1245822302567cf7acb024b24169f3c8dd
   border-color: transparent;
   background-repeat: no-repeat;
   background-size: contain;
@@ -379,11 +364,8 @@ section {
   display: inline-block;
   height: 16px;
   width: 16px;
-<<<<<<< HEAD
   background-image: url(../IMG/arrow2.svg);
-=======
   background-image: url(IMG/arrow2.svg);
->>>>>>> 1df0dd1245822302567cf7acb024b24169f3c8dd
   border-color: transparent;
   background-repeat: no-repeat;
   background-size: contain;
