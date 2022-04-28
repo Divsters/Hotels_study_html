@@ -61,7 +61,7 @@ body {
 }
 
 section {
-  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 
@@ -87,27 +87,33 @@ section {
 }
 
 .section-heading {
+  margin: 0;
   text-indent: 40px;
-  font-style: normal;
-  font-weight: 400;
   font-size: 40px;
   line-height: 1;
-  margin: 0;
-  margin-bottom: 20px;
+  font-weight: 400;
+  color: #333333;
 }
 
 
 /* header */
 
 .header {
-  height: 154px;
-  margin-top: 30px;
+  /* height: 154px; */
+  padding-top: 30px;
+  margin-bottom: 70px;
 }
 
 .header-top-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
+}
+
+.logo-img {
+  min-height: 54px;
+  min-width: 261px;
 }
 
 .header-contacts-link {
@@ -143,9 +149,8 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 30px;
-  padding-right: 45px;
-  padding-left: 45px;
+  padding-top: 30px;
+  padding: 10px 45px 10px 45px;
   border-radius: 15px;
   background-color: white;
   min-height: 70px ;
@@ -153,8 +158,16 @@ section {
 
 .nav-list {
   display: flex;
-  flex-wrap: wrap;
-  margin-right: 56px;
+  align-items: center;
+  min-height: 50px;
+  padding-right: 56px;
+  border-right: 1px solid #e1e1e1;
+}
+
+.nav-item {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
 }
 
 .nav-item:not(:last-child) {
@@ -163,9 +176,6 @@ section {
 
 .nav-link {
   color: #666666;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1;
 }
 
 .btn-tour {
@@ -178,8 +188,6 @@ section {
 
 .header-btns {
   margin-left: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 /* special-offer */
@@ -190,15 +198,19 @@ section {
   justify-content: space-between;
 }
 
+.section-heading-special {
+  margin-bottom: 20px;
+}
+
 .special-left {
   display: flex;
+  margin-right: 23px;
   flex: 1 1 50%;
   flex-direction: column;
 }
 
 .special-right {
   flex: 1 1 50%;
-  margin-left: 23px;
 }
 
 .special-item {
@@ -294,10 +306,16 @@ section {
 
 /* about */
 
+.section-heading-about {
+  margin-bottom: 11px;
+}
+
 .about-text {
-  width: 888px;
-  line-height: 32px;
-  margin-top: 11px;
+  margin-right: 282px;
+  font-size: 16px;
+  line-height: 200%;
+  font-weight: 400;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -310,10 +328,66 @@ section {
 .services-list {
   display: flex;
   flex-flow: row wrap;
+  gap: 23px 23px;
 }
 
 .services-item {
-  flex: 0 0 50%;
+  flex: 1 1 45%;
+  border-radius: 15px;
+  background-size: cotain;
+}
+
+.service-item-img1 {
+  background: url(/IMG/living.png) no-repeat, white;
+}
+
+.services-item-img2 {
+  background: url(/IMG/rent.png) no-repeat, white;
+}
+
+.services-item-img3 {
+  background: url(/IMG/pool.png) no-repeat, white;
+}
+
+.services-item-img4 {
+  background: url(/IMG/cars.png) no-repeat, white;
+}
+
+.service-item-link {
+  display: inline-block;
+  padding-top: 191px;
+  padding-left: 45px;
+}
+
+.service-item-link-icon {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background-image: url(/IMG/arrow2.svg);
+  border-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transform: translateY(3.7px);
+}
+
+.service-item-link-name {
+  font-size: 20px;
+  line-height: 200%;
+  font-weight: 500;
+  color: #CC9933;
+}
+
+.service-item-text {
+  margin: 0;
+  padding-left: 45px;
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+  margin-bottom: 50px;
 }
 
 /* benefits */
