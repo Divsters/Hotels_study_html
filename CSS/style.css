@@ -290,7 +290,6 @@ section {
   height: 16px;
   width: 16px;
   background-image: url(../IMG/arrow.svg);
-  background-image: url(IMG/arrow.svg);
   border-color: transparent;
   background-repeat: no-repeat;
   background-size: contain;
@@ -335,7 +334,7 @@ section {
 .services-item {
   flex: 1 1 45%;
   border-radius: 15px;
-  background-size: cotain;
+  background-size: contain;
 }
 
 .service-item-img1 {
@@ -365,7 +364,6 @@ section {
   height: 16px;
   width: 16px;
   background-image: url(../IMG/arrow2.svg);
-  background-image: url(IMG/arrow2.svg);
   border-color: transparent;
   background-repeat: no-repeat;
   background-size: contain;
@@ -383,6 +381,7 @@ section {
 .service-item-text {
   margin: 0;
   padding-left: 45px;
+  padding-right: 126px;
   font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
@@ -403,10 +402,26 @@ section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 23px 23px;
 }
 
 .benefits-item {
-  flex: 0 0 25%;
+  flex: 0 0 22%;
+  padding: 40px 42px 41px 45px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.benefits-item-img {
+  margin-bottom: 10px;
+}
+
+.benefits-item-text {
+  margin: 0;
+  width: 188px;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
 }
 
 /* accomodation */
@@ -418,8 +433,157 @@ section {
 .accomodation-list {
   display: flex;
   flex-flow: row wrap;
+  gap: 23px 23px;
 }
 
 .accomodation-item {
-  flex: 0 0 30%
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 32%;
+  max-width: 374px;
+  padding: 253px 46px 41px 45px;
+  border-radius: 15px;
+  /* background-size: cotain; */
+}
+
+.accomodation-item-img1 {
+  background: url(../IMG/lagoon_espanola.png) no-repeat, white
+}
+
+.accomodation-item-img2 {
+  background: url(../IMG/lagoona_sontipica.png) no-repeat, white
+}
+
+.accomodation-item-img3 {
+  background: url(../IMG/lagoonadelaguerra.png) no-repeat, white
+}
+
+.accomodation-item-img4 {
+  background: url(../IMG/lagoonamentirapiadosa.png) no-repeat, white
+}
+
+.accomodation-item-img5 {
+  background: url(../IMG/lagoonaempujarlacreatividad.png) no-repeat, white
+}
+
+.accomodation-item-img6 {
+  background: url(../IMG/lagoonaelretorno.png) no-repeat, white
+}
+
+.accomodation-item-img7 {
+  background: url(../IMG/lagoonamentirapiadosa2.png) no-repeat, white
+}
+
+.accomodation-item-img8 {
+  background: url(../IMG/lagoonasuertesiguiosiempre.png) no-repeat, white
+}
+
+.accomodation-item-img9 {
+  background: url(../IMG/lagoonamore.png) no-repeat, white;
+  padding: 0;
+}
+
+.accomodation-item-info {
+  /* margin-bottom: auto */
+}
+
+.accomodation-item-price {
+  display: flex;
+  margin: 0;
+}
+
+.accomodation-item-price-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 180px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.accomodation-price-small {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
+}
+
+.accomodation-item-price-strong {
+  /* display: inline-block; */
+  word-break: break-all;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.accomodation-item-rate {
+  display: inline-block;
+  flex-wrap: nowrap;
+  margin-left: auto;
+  margin-bottom: 16px;
+}
+
+.accomodation-rate-star {
+  display: inline-block;
+  width: 14px;
+  height: 13.41px;
+  background: url(../IMG/star-color.png) no-repeat;
+}
+
+.accomodation-rate-nostar {
+  display: inline-block;
+  width: 14px;
+  height: 13.41px;
+  background: url(../IMG/star-grey.png) no-repeat;
+}
+
+.accomodation-item-name {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.accomodation-item-place {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #999999;
+}
+
+.accomodation-item-appartments-link {
+  flex-grow: 0
+}
+
+.accomodation-item-info-more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: 27px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.accomodation-more-variants-link {
+  margin-right: 9px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: white;
+}
+
+.accomodation-more-arrow {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url(../IMG/arrow3.svg) no-repeat;
+  background-size: contain;
 }
