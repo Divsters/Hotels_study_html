@@ -60,7 +60,7 @@ body {
   background-color: #E5E5E5;
 }
 
-section {
+section:not(:last-child) {
   margin-bottom: 70px;
 }
 
@@ -675,6 +675,10 @@ input#date {
 
 /* contacts */
 
+.contacts {
+  margin-bottom: 19px;
+}
+
 .section-heading-contacts {
   margin-bottom: 26px;
 }
@@ -756,4 +760,126 @@ input#date {
 .contacts-info-item-btn {
   padding: 27px 29px 27px 29px;
 }
+
+/* footer */
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  padding: 44px 51px 46px 52px;
+  background: url(../IMG/footer-logo.svg) no-repeat, #333333;
+  background-size: 254.75px 254.77px;
+  background-position: bottom -14px left 738px;
+  border-radius: 15px;
+}
+
+.license {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 29.9%;
+  margin-right: 102px;
+}
+
+.copyright,
+.oferta {
+  font-size: 16px;
+  line-height: 190%;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.copyright {
+  margin-bottom: 3em;
+}
+
+.oferta {
+  margin-bottom: 49px;
+}
+
+.terms-link {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #CC9933;
+}
+
+.footer-address {
+  margin-bottom: 14px;
+   font-size: 16px;
+   line-height: 16px;
+   font-weight: 400;
+   font-style: normal;
+   color: white;
+}
+
+.footer-phone {
+  margin-bottom: 2em;
+}
+
+.footer-link-phone {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #CC9933;
+}
+
+.contacts-info-item-link-email {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.footer-social-link {
+  display: inline-block;
+  margin-bottom: 14.6px;
+
+}
+
+.footer-social-icon {
+  display: inline-block;
+  margin-bottom: 0;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  background-size: contain;
+  background-position: center
+}
+
+.footer-social-icon-tripadviser {
+  background-image: url(../IMG/tripadviser.svg);
+  background-repeat: no-repeat;
+}
+
+.footer-social-icon-twitter {
+  background-image: url(../IMG/twitter.svg);
+  background-repeat: no-repeat;
+}
+
+.footer-social-icon-fb {
+  background-image: url(../IMG/facebook.svg);
+  background-repeat: no-repeat;
+}
+
+.footer-social-icon-vk {
+  background-image: url(../IMG/vk.svg);
+  background-repeat: no-repeat;
+}
+
+.footer-social-icon-insta {
+  background-image: url(../IMG/instagram.svg);
+  background-repeat: no-repeat;
+}
+
+
+
 
