@@ -671,3 +671,89 @@ input#date {
 .city-booking-select {
   min-width: 169px;
 }
+
+
+/* contacts */
+
+.section-heading-contacts {
+  margin-bottom: 26px;
+}
+
+.contacts-content {
+  display: flex;
+  flex-direction: row;
+  padding: 44px 44px 46px 46px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+
+.contacts-info-list {
+  margin-right: 50px;
+  margin-bottom: auto;
+}
+
+.contacts-info-item {
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+}
+
+.contacts-info-item {
+  padding-bottom: 23px;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.contacts-info-item:not(:nth-child(1)) {
+  padding-top: 23px;
+}
+
+.contacts-info-item-head {
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.contacts-info-item-text {
+  display: flex;
+  flex-direction: column;
+  width: 61%;
+}
+
+.contacts-info-item-adress-text {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;;
+  font-weight: 400;
+}
+
+.contacts-info-item-link-tel,
+.contacts-info-item-link-email {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #CC9933;
+}
+
+.contacts-info-item-email-text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+}
+
+.contacts-info-item-timetable {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.contacts-info-item-btn {
+  padding: 27px 29px 27px 29px;
+}
+
