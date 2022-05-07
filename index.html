@@ -731,34 +731,60 @@
 
   <section class="booking">
     <div class="container">
-      <h2 class="section-heading">
-        Хочу тур
-      </h2>
-      <form class="booking-form" action="https://jsonplaceholder.typicode.com/posts" autocomplete method="POST">
-        <div class="input-booking-form">
-          <label class="label-booking-form" for="city">Город вылета</label>
-          <input type="text" name="city" id="city" class="city-booking-form">
-        </div>
-        <div class="input-booking-form">
-          <label class="label-booking-form" for="country">Страна</label>
-          <input type="text" name="country" id="country" class="c-booking-form">
-        </div>
-        <div class="input-booking-form">
-          <label class="label-booking-form" for="date">Дата прибытия</label>
-          <input type="date" name="date" id="date" class="date-booking-form">
-        </div>
-        <div class="input-booking-form">
-          <label class="label-booking-form" for="nights">Ночей</label>
-          <input type="number" name="nights" id="nights" class="nights-booking-form">
-        </div>
-        <div class="input-booking-form">
-          <label class="label-booking-form" for="tourists">Туристы</label>
-          <input type="number" name="tourists" id="tourists" class="tourists-booking-form">
-        </div>
-        <button type="submit" class="btn">
-          Найти
-        </button>
-      </form>
+      <div class="booking-container">
+        <h2 class="section-heading section-heading-form">
+          Хочу тур
+        </h2>
+        <form class="booking-form" action="https://jsonplaceholder.typicode.com/posts" autocomplete method="POST">
+
+          <!-- datalits realized --
+
+          <div class="input-booking-form">
+            <label class="label-booking-form" for="city">Город вылета</label>
+            <input list="city-list" type="city" name="city" placeholder="Санкт-Петербург" id="city" class="city-booking-form">
+            <datalist id="city-list">
+              <option value="Санкт-Петербург"></option>
+              <option value="Москва"></option>
+              <option value="Грозный"></option>
+            </datalist>
+          </div> -->
+
+          <div class="booking-inputs">
+            <div class="input-booking-form input-booking-form-city">
+              <label class="label-booking-form" for="city">Город вылета</label>
+              <select  type="city" name="city" placeholder="Санкт-Петербург" id="city" class="city-booking-select">
+                <option value="SPB">Санкт-Петербург</option>
+                <option value="Moscow">Москва</option>
+                <option value="Minsk">Минск</option>
+              </select>
+            </div>
+            <div class="input-booking-form">
+              <label class="label-booking-form" for="country">Страна</label>
+              <select type="country" name="country" id="country" class="country-booking-select">
+                <option value="Russia">Россия</option>
+                <option value="Belarus">Белорусия</option>
+              </select>
+            </div>
+            <div class="input-booking-form">
+              <label class="label-booking-form" for="date">Дата прибытия</label>
+              <input type="date" name="date" id="date" class="date-booking-form">
+            </div>
+            <div class="input-booking-form">
+              <label class="label-booking-form" for="nights">Ночей</label>
+              <input type="number" name="nights" id="nights" class="nights-booking-form">
+            </div>
+            <div class="input-booking-form input-booking-form-tourist">
+              <label class="label-booking-form" for="tourists">Туристы</label>
+              <input type="number" name="tourists" id="tourists" class="tourists-booking-form">
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-form">
+            Найти
+          </button>
+        </form>
+
+      </div>
     </div>
   </section>
 

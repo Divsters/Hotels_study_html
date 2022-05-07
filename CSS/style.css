@@ -582,3 +582,92 @@ section {
   background: url(../IMG/arrow3.svg) no-repeat;
   background-size: contain;
 }
+
+/* form */
+
+.booking-container {
+  padding: 38px 45px 71px 40px;
+  background-color: #E9E9E9;
+  border-radius: 15px;
+}
+
+.section-heading-form {
+  text-indent: 0;
+  margin-bottom: 19px;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  padding: 28px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.booking-inputs {
+  display: flex;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  margin: 0 auto;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 1
+}
+
+input#nights,
+input#tourists,
+input#date {
+  width: 121px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.label-booking-form {
+  display: block;
+  margin-bottom: 15px;
+  flex: 1 1 20%;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.input-booking-form {
+  display: inline-block;
+  margin-left: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-right: 1px solid #E1E1E1;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.country-booking-select,
+.city-booking-select {
+  border: none;
+}
+
+.input-booking-form-city {
+  padding-left: 0;
+}
+
+.input-booking-form-tourist {
+  padding-right: 30px;
+}
+
+.btn-form {
+  margin-left: auto;
+  padding: 13px 30px 13px 30px;
+}
+
+.country-booking-select,
+.city-booking-select {
+  min-width: 169px;
+}
