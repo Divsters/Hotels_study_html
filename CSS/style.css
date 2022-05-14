@@ -34,6 +34,10 @@
   url(/fonts/MullerBold.woff) format(woff);
 }
 
+:root {
+  --link-color: #CC9933;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -70,11 +74,21 @@ section:not(:last-child) {
   padding: 13px 20px;
   font-size: 16px;
   line-height: 1;
-  color: #CC9933;
+  color: var(--link-color);
   background-color: transparent;
-  border: 1px solid #CC9933;
+  border: 1px solid var(--link-color);
   border-radius: 10px;
   cursor: pointer;
+  transition: transform, color, background-color, .3s ease;
+}
+
+.btn:hover {
+  color: white;
+  background-color: var(--link-color);
+}
+
+.btn:active {
+  transform: translateY(3px);
 }
 
 .container {
@@ -122,6 +136,15 @@ section:not(:last-child) {
   line-height: 1;
   font-weight: 500;
   color: #666666;
+  transition: transform, color .3s ease;
+}
+
+.header-contacts-link:hover {
+  color:var(--link-color);
+}
+
+.header-contacts-link:active {
+  transform: translateY(3px)
 }
 
 .header-lk {
@@ -131,7 +154,13 @@ section:not(:last-child) {
   font-size: 16px;
   line-height: 1;
   font-weight: 400;
-  color: #CC9933;
+  color: var(--link-color);
+  transform-origin: top right;
+  transition: transform .3s ease;
+}
+
+.header-lk:hover {
+  transform: scale(1.15)
 }
 
 .header-lk-pic {
@@ -174,7 +203,17 @@ section:not(:last-child) {
 }
 
 .nav-link {
+  display: inline-block;
   color: #666666;
+  transition: transform, color .3s ease;
+}
+
+.nav-link:hover {
+  color:var(--link-color);
+}
+
+.nav-link:active {
+  transform: translateY(3px)
 }
 
 .btn-tour {
@@ -283,6 +322,16 @@ section:not(:last-child) {
   color: #FFFFFF;
 }
 
+.special-item-more {
+  display: inline-block;
+  transform-origin: bottom left;
+  transition: transform .3s ease;
+}
+
+.special-item-more:hover {
+  transform: scale(1.15);
+}
+
 .special-item-more-arrow {
   display: inline-block;
   height: 16px;
@@ -326,13 +375,21 @@ section:not(:last-child) {
 .services-list {
   display: flex;
   flex-flow: row wrap;
-  gap: 23px 23px;
+  /* gap: 23px 23px; */
 }
 
 .services-item {
-  flex: 1 1 45%;
+  flex: 1 1 40%;
   background-size: contain;
   border-radius: 15px;
+}
+
+.services-item:nth-child(odd) {
+  margin-right: 23px;
+}
+
+.services-item:not(:nth-child(-n+2)) {
+  margin-top: 23px;
 }
 
 .service-item-img1 {
@@ -355,6 +412,12 @@ section:not(:last-child) {
   display: inline-block;
   padding-top: 191px;
   padding-left: 45px;
+  transform-origin: bottom left;
+  transition: transform .3s ease;
+}
+
+.service-item-link:hover {
+  transform: scale(1.15);
 }
 
 .service-item-link-icon {
@@ -373,7 +436,7 @@ section:not(:last-child) {
   font-size: 20px;
   line-height: 200%;
   font-weight: 500;
-  color: #CC9933;
+  color: var(--link-color);
 }
 
 .service-item-text {
@@ -397,7 +460,7 @@ section:not(:last-child) {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 23px 23px;
+  /* gap: 23px 23px; */
 }
 
 .benefits-item {
@@ -405,6 +468,14 @@ section:not(:last-child) {
   padding: 40px 42px 41px 45px;
   background-color: white;
   border-radius: 15px;
+}
+
+.benefits-item:not(:nth-child(4n)) {
+  margin-right: 23px;
+}
+
+.benefits-item:not(:nth-child(-n+4)) {
+  margin-top: 23px;
 }
 
 .benefits-item-img {
@@ -432,6 +503,7 @@ section:not(:last-child) {
 }
 
 .accomodation-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -439,7 +511,12 @@ section:not(:last-child) {
   max-width: 374px;
   padding: 253px 46px 41px 45px;
   border-radius: 15px;
-  /* background-size: cotain; */
+  /* background-size: contain; */
+  transition: transform .3s ease;
+}
+
+.accomodation-item:hover {
+  transform: scale(1.025);
 }
 
 .accomodation-item-img1 {
@@ -475,6 +552,7 @@ section:not(:last-child) {
 }
 
 .accomodation-item-img9 {
+  position: relative;
   padding: 0;
   background: url(../IMG/lagoonamore.png) no-repeat, white;
 }
@@ -557,6 +635,16 @@ section:not(:last-child) {
   flex-grow: 0
 }
 
+/* .accomodation-item-appartments-link::before {
+  content:'';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+} */
+
 .accomodation-item-info-more {
   display: flex;
   justify-content: space-between;
@@ -573,6 +661,17 @@ section:not(:last-child) {
   font-size: 20px;
   line-height: 200%;
   color: white;
+}
+
+.accomodation-more-variants-link::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
 }
 
 .accomodation-more-arrow {
@@ -741,7 +840,14 @@ input#date {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: #CC9933;
+  color: var(--link-color);
+  transform-origin: center left;
+  transition: transform .3s ease;
+}
+
+.contacts-info-item-link-tel:hover,
+.contacts-info-item-link-email:hover {
+  transform: translateX(2px)
 }
 
 .contacts-info-item-email-text {
@@ -802,7 +908,8 @@ input#date {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: #CC9933;
+  color: var(--link-color);
+  transition: transform .3s ease;
 }
 
 .footer-address {
@@ -823,7 +930,13 @@ input#date {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: #CC9933;
+  color: var(--link-color);
+  transition: transform .3s ease;
+}
+
+.footer-link-phone:hover,
+.terms-link:hover {
+  transform:translateX(2px)
 }
 
 .contacts-info-item-link-email {
@@ -852,7 +965,12 @@ input#date {
   height: 25px;
   background-color: transparent;
   background-size: contain;
-  background-position: center
+  background-position: center;
+  transition: transform .3s ease;
+}
+
+.footer-social-icon:hover {
+  transform: scale(1.25);
 }
 
 .footer-social-icon-tripadviser {
