@@ -42,6 +42,11 @@
   box-sizing: border-box;
 }
 
+/* *:focus {
+  outline: 1px solid var(--link-color);
+  outline-offset: 5px;
+} */
+
 a {
   text-decoration: none;
 }
@@ -252,6 +257,7 @@ section:not(:last-child) {
 }
 
 .special-item {
+  position: relative;
   width: auto;
   height: auto;
   padding: 40px 234px 40px 40px;
@@ -324,12 +330,7 @@ section:not(:last-child) {
 
 .special-item-more {
   display: inline-block;
-  transform-origin: bottom left;
-  transition: transform .3s ease;
-}
-
-.special-item-more:hover {
-  transform: scale(1.15);
+  transition: margin-right .3s ease;
 }
 
 .special-item-more-arrow {
@@ -343,12 +344,55 @@ section:not(:last-child) {
   background-position: center;
   transform: translateY(3.7px);
 }
+
 .special-item-more-text {
   font-size: 16px;
   font-weight: 400;
   line-height: 1;
   color: #FFCC66;
+  transition: margin-right, color, .3s ease;
 }
+
+.special-item-more-text::before {
+  content:'';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.special-item-more:focus {
+  outline: none;
+}
+
+.special-item-more:focus::before {
+  content:'';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  outline: 1px solid var(--link-color);
+  outline-offset: 5px;
+}
+
+
+
+.special-item-more-text:hover {
+  margin-right: 11px;
+}
+
+.special-item-more-text:active {
+  margin-right: 0;
+  --link-color: white;
+  color: var(--link-color);
+  transition: margin-right, color, .1s ease;
+}
+
+
 
 
 /* about */
@@ -379,7 +423,9 @@ section:not(:last-child) {
 }
 
 .services-item {
+  position: relative;
   flex: 1 1 40%;
+  background-color: white;
   background-size: contain;
   border-radius: 15px;
 }
@@ -392,44 +438,41 @@ section:not(:last-child) {
   margin-top: 23px;
 }
 
+.service-item-img {
+  display: inline-block;
+  width: 572px;
+  height: 165px;
+}
+
 .service-item-img1 {
-  background: url(../IMG/living.jpg) no-repeat, white;
+  background: url(../IMG/living.png) no-repeat;
 }
 
-.services-item-img2 {
-  background: url(../IMG/rent.png) no-repeat, white;
+.service-item-img2 {
+  background: url(../IMG/rent.png) no-repeat;
 }
 
-.services-item-img3 {
-  background: url(../IMG/pool.png) no-repeat, white;
+.service-item-img3 {
+  background: url(../IMG/pool.png) no-repeat;
 }
 
-.services-item-img4 {
-  background: url(../IMG/cars.png) no-repeat, white;
+.service-item-img4 {
+  background: url(../IMG/cars.png) no-repeat;
 }
 
 .service-item-link {
   display: inline-block;
-  padding-top: 191px;
+  padding-top: 26px;
   padding-left: 45px;
-  transform-origin: bottom left;
-  transition: transform .3s ease;
 }
 
-.service-item-link:hover {
-  transform: scale(1.15);
-}
 
 .service-item-link-icon {
   display: inline-block;
   height: 16px;
   width: 16px;
-  background-image: url(../IMG/arrow2.svg);
-  border-color: transparent;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
   transform: translateY(3.7px);
+  transition: color .3s ease;
 }
 
 .service-item-link-name {
@@ -437,6 +480,60 @@ section:not(:last-child) {
   line-height: 200%;
   font-weight: 500;
   color: var(--link-color);
+  transition: margin-right, color, .3s ease;
+}
+
+.service-item-link-name:hover {
+  margin-right: 11px;
+  --link-color: #E9C479;
+  color: var(--link-color);
+}
+
+.service-item-link-name:focus {
+  --link-color: #CC9933;
+  color: var(--link-color);
+}
+
+.service-item-link-name:active {
+  margin-right: 0;
+  --link-color: #A47312;
+  color: var(--link-color);
+  transition: margin-right, color, .05s ease;
+}
+
+.service-item-link:focus {
+  outline: none;
+}
+
+.service-item-link:focus::before {
+  content:'';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  outline: 1px solid var(--link-color);
+  outline-offset: 5px;
+}
+
+.service-item-link-name::before {
+  content:'';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+
+.service-item-link-icon path {
+  transition: stroke .3s ease;
+}
+
+.service-item-link:hover .service-item-link-icon path {
+  --link-color:#E9C479;
+  stroke: var(--link-color);
 }
 
 .service-item-text {
@@ -635,7 +732,24 @@ section:not(:last-child) {
   flex-grow: 0
 }
 
-/* .accomodation-item-appartments-link::before {
+
+.accomodation-item-appartments-link:focus::before {
+  content:'';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  outline: 1px solid var(--link-color);
+  outline-offset: 5px     ;
+}
+
+.accomodation-item-appartments-link:focus {
+  outline: none;
+}
+
+/* .accomodation-item-appartments-link::before{
   content:'';
   position: absolute;
   top: 0;
